@@ -16,7 +16,7 @@ How to use:
        // pin1 & pin2: encoder pins; 
        // max: maximun value for the encoder count; 
        // min: minimum value for the encoder count; 
-       // cycle: if TRUE, the encoder reset count to the min. If FALSE, hold the max value. 
+       // cycle: if TRUE, the encoder reset count to the min when reach max. If FALSE, hold the max value. 
   
 3. Get the encoder position
 

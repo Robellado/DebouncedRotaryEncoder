@@ -23,9 +23,12 @@ How to use:
         myEnc.getPosition()
        // It works better if attached to interrupt pin.
   
-4. Optional: you can set the encoder value this way: 
+4. Optional: you can set the encoder anytime values this way: 
 
-        myEnc.setPosition(value)
-
+        myEnc.setPosition(value)        //int 
+        myEnc.setMaxValue(newMaxValue)  //int 
+        myEnc.setMinValue(newMinValue)  //int 
+        setCycleMode(bool newCycleMode) //bool 
+        
 To do:
 Sure that this code can be optimized, but it works!

@@ -21,7 +21,10 @@
 #else
 	#include "WProgram.h"
 #endif
+
+
 #endif
+
 
 #define OFF 2
 
@@ -38,12 +41,22 @@ public:
 	int getDirection();
 
 	// adjust the current position
-	void setPosition(long newPosition);
+	void setPosition(int newPosition);
+
+	// adjust the max value
+	void setMaxValue(int newMaxValue);
+
+	// adjust the min value
+	void setMinValue(int newMinValue);
+
+	// adjust the cycle mode
+	//void setCycleMode(bool newCycleMode);
 
 	//Check the encoder state. Better if called from interrupt in Pin1
 	void encoderCheck();
 
 private:
+	
 	void changeValue(bool up);
 	int _pin1, _pin2; // Pins used for the encoder. 
 	volatile int direction; // 1=CW; -1=CCW
@@ -51,11 +64,10 @@ private:
 	volatile int minValue;
 	volatile int maxValue;
 	volatile int cycleValues;
+
 	volatile uint8_t a0 = OFF;
 	volatile uint8_t c0 = OFF;
-	volatile int8_t _oldState;
-	volatile int _position;         // Internal position 
-	volatile int _positionExt;      // External position
-	volatile int _positionExtPrev;  // External position 
+
+
 };
 

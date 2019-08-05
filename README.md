@@ -2,6 +2,7 @@
 A library for the Arduino & Teensy for using a rotary encoder as an input with embeeded debounce to avoid noise.
 
 Based in the idea and work of David Johnson-Davies - www.technoblogy.com 
+
 Complete description can be found in his web: http://www.technoblogy.com/show?1YHJ
 
 I was searching a library for using a rotary encoder in my latest project and found a lot of information on this topic but none of the existing libraries eliminate the effects of contact bounce. So I finally found that David Johnson-Davies idea that I turned into a library.

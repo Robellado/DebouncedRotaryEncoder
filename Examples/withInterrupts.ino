@@ -1,4 +1,4 @@
-	/* Copyright (c) by Javier Pitarch 2019 - robellado@gmail.com
+/* Copyright (c) by Javier Pitarch 2019 - robellado@gmail.com
 
    Based in the idea and work of David Johnson-Davies - www.technoblogy.com 
    Complete description can be found in his web: http://www.technoblogy.com/show?1YHJ

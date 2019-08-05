@@ -14,8 +14,6 @@ DebouncedEncoder::DebouncedEncoder(int pin1, int pin2, int max, int min, bool cy
 	
 	pinMode(pin1, INPUT_PULLUP);
 	pinMode(pin2, INPUT_PULLUP);
-	//Example:
-	//attachInterrupt(digitalPinToInterrupt(encPinA), DebouncedEncoder.encoderCheck(), CHANGE);
 }
 
 int DebouncedEncoder::getPosition()
@@ -28,9 +26,26 @@ int DebouncedEncoder::getDirection()
 	return direction;
 }
 
-void DebouncedEncoder::setPosition(long newPosition)
+void DebouncedEncoder::setPosition(int newPosition)
 {
-	encCount = newPosition;
+	Position = newPosition;
+}
+
+void DebouncedEncoder::setMaxValue(int newMaxValue)
+{
+	maxValue = newMaxValue;
+}
+
+void DebouncedEncoder::setMinValue(int newMinValue)
+{
+	minValue = newMinValue;
+}
+
+
+void DebouncedEncoder::setCycleMode(bool newCycleMode)
+{
+	cycleValues = newCycleMode;
+
 }
 
 

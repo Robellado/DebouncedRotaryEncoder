@@ -50,7 +50,7 @@ public:
 	void setMinValue(int newMinValue);
 
 	// adjust the cycle mode
-	//void setCycleMode(bool newCycleMode);
+	void setCycleMode(bool newCycleMode);
 
 	//Check the encoder state. Better if called from interrupt in Pin1
 	void encoderCheck();

@@ -28,7 +28,7 @@ int DebouncedEncoder::getDirection()
 
 void DebouncedEncoder::setPosition(int newPosition)
 {
-	Position = newPosition;
+	encCount = newPosition;
 }
 
 void DebouncedEncoder::setMaxValue(int newMaxValue)
